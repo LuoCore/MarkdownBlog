@@ -1,0 +1,1 @@
+<p>&nbsp;string ddd = "萨芬啊手动阀 asdfas--_asd&nbsp;&nbsp; fasf \r\n,ss，s。s.s&lsquo;dd&rsquo;d&middot;d`d%%##";<br />&nbsp;var dss = Regex.Replace(ddd, @"[^a-zA-Z0-9\u4e00-\u9fa5-_,，。.&lsquo;&rsquo;&middot;`!！@#$%^&amp;*()]+","");</p>

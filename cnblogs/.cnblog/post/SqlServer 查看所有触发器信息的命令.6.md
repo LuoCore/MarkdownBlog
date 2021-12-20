@@ -1,0 +1,4 @@
+<p>https://blog.csdn.net/chenghaibing2008/article/details/45332993</p>
+<p>&nbsp;</p>
+<p>SELECT&nbsp; &nbsp;<br />&nbsp;&nbsp;&nbsp; object_name(a.parent_obj) as [表名] &nbsp;<br />&nbsp;&nbsp;&nbsp; ,a.name as [触发器名称] &nbsp;<br />&nbsp;&nbsp;&nbsp; ,(case when b.is_disabled=0 then '启用' else '禁用' end) as [状态] &nbsp;<br />&nbsp;&nbsp;&nbsp; ,b.create_date as [创建日期] &nbsp;<br />&nbsp;&nbsp;&nbsp; ,b.modify_date as [修改日期] &nbsp;<br />&nbsp;&nbsp;&nbsp; ,c.text as [触发器语句] &nbsp;<br />FROM sysobjects a &nbsp;<br />&nbsp;&nbsp;&nbsp; INNER JOIN sys.triggers b &nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ON b.object_id=a.id &nbsp;<br />&nbsp;&nbsp;&nbsp; INNER JOIN syscomments c &nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ON c.id=a.id &nbsp;<br />WHERE a.xtype='tr' &nbsp;<br />ORDER BY [表名] <br /><img src="https://img2020.cnblogs.com/blog/636208/202111/636208-20211130115351563-1892136152.png" alt="" loading="lazy" /></p>
+<p>&nbsp;</p>
