@@ -4,7 +4,7 @@ Vite 需要 Node.js 版本 >= 12.0.0。
 1. $ npm init vite@latest
 2.
 
-不知道之前为什么不行，装了一下旧的版本，然后再通过
+不****知道之前为什么不行，装了一下旧的版本，然后再通过
 
 > https://zhuanlan.zhihu.com/p/363219203
 
